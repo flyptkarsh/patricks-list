@@ -17,6 +17,7 @@ gem 'devise'
 gem 'simple_form'
 gem "haml-rails", "~> 0.9"
 gem "geocoder"
+gem 'friendly_id', '~> 5.1.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
