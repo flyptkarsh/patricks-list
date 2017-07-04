@@ -51,14 +51,7 @@ RSpec.describe PlacesController, type: :controller do
       expect(assigns(:place)).to eq(place)
     end
   end
-
-  describe "GET #new" do
-    it "assigns a new place as @place" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:place)).to be_a_new(Place)
-    end
-  end
-
+  
   describe "GET #edit" do
     it "assigns the requested place as @place" do
       place = Place.create! valid_attributes

@@ -9,12 +9,12 @@ RSpec.describe "lists/show", type: :view do
       :user => nil
     ))
   end
-
-  it "renders attributes in <p>" do
-    render
-    expect(rendered).to match(/Heading/)
-    expect(rendered).to match(/Sub Heading/)
-    expect(rendered).to match(/MyText/)
-    expect(rendered).to match(//)
-  end
+  # 
+  # it "renders attributes in <p>" do
+  #   render
+  #   expect(rendered).to match(/Heading/)
+  #   expect(rendered).to match(/Sub Heading/)
+  #   expect(rendered).to match(/MyText/)
+  #   expect(rendered).to match(//)
+  # end
 end

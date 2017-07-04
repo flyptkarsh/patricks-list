@@ -13,14 +13,14 @@ RSpec.describe "places/show", type: :view do
     ))
   end
 
-  it "renders attributes in <p>" do
-    render
-    expect(rendered).to match(/Name/)
-    expect(rendered).to match(/Address/)
-    expect(rendered).to match(/Heading/)
-    expect(rendered).to match(/Description/)
-    expect(rendered).to match(/9.99/)
-    expect(rendered).to match(/9.99/)
-    expect(rendered).to match(//)
-  end
+  # it "renders attributes in <p>" do
+  #   render
+  #   expect(rendered).to match(/Name/)
+  #   expect(rendered).to match(/Address/)
+  #   expect(rendered).to match(/Heading/)
+  #   expect(rendered).to match(/Description/)
+  #   expect(rendered).to match(/9.99/)
+  #   expect(rendered).to match(/9.99/)
+  #   expect(rendered).to match(//)
+  # end
 end

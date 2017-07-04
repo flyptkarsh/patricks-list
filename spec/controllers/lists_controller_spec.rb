@@ -51,14 +51,7 @@ RSpec.describe ListsController, type: :controller do
       expect(assigns(:list)).to eq(list)
     end
   end
-
-  describe "GET #new" do
-    it "assigns a new list as @list" do
-      get :new, params: {}, session: valid_session
-      expect(assigns(:list)).to be_a_new(List)
-    end
-  end
-
+  
   describe "GET #edit" do
     it "assigns the requested list as @list" do
       list = List.create! valid_attributes
