@@ -1,0 +1,25 @@
+%p#notice= notice
+%p
+  %strong Name:
+  = @place.name
+%p
+  %strong Address:
+  = @place.address
+%p
+  %strong Heading:
+  = @place.heading
+%p
+  %strong Description:
+  = @place.description
+%p
+  %strong Latitude:
+  = @place.latitude
+%p
+  %strong Longitude:
+  = @place.longitude
+%p
+  %strong List:
+  = @place.list
+= link_to 'Edit', edit_place_path(@place)
+|
+= link_to 'Back', places_path
