@@ -1,23 +1,6 @@
-= form_with(model: list, local: true) do |form|
-  - if list.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(list.errors.count, "error")
-        prohibited this list from being saved:
-      %ul
-        - list.errors.full_messages.each do |message|
-          %li= message
-  .field
-    = form.label :heading
-    = form.text_field :heading, id: :list_heading
-  .field
-    = form.label :sub_heading
-    = form.text_field :sub_heading, id: :list_sub_heading
-  .field
-    = form.label :description
-    = form.text_area :description, id: :list_description
-  .field
-    = form.label :user_id
-    = form.text_field :user_id, id: :list_user_id
-  .actions
-    = form.submit
+= simple_form_for @list do |form|
+  = form.input :heading
+  = form.input :sub_heading
+  = form.input :description, as: :text
+  = form.association :user
+  = form.button :submit
